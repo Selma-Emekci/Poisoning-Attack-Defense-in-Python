@@ -112,5 +112,7 @@ Looking ahead, we are optimistic about the future potential of this project. We 
 
 # References
 S. Hong, V. Chandrasekaran, Y. Kaya, T. Dumitras, and N. Papernot, “On the effectiveness of mitigating data poisoning attacks with gradient shaping,” _arXiv preprint arXiv:2002.11497, 2020._
+
 Lu, T. Y., Yang, Y., & Mirzasoleiman, B. (n.d.). Friendly noise against adversarial noise: A powerful defense ... - cs. _https://web.cs.ucla.edu/~baharan/papers/liu22friendly.pdf _
+
 Xiong, P., Buffet, S., Iqbal, S., Lamontage, P., Mamun, M., & Molyneaux, H. (n.d.). Towards a robust and trustworthy machine learning system ... - arxiv.org. _https://arxiv.org/pdf/2101.03042.pdf_
