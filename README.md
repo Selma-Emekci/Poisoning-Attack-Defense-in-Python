@@ -10,6 +10,7 @@ In a paper that proposed a defense strategy named “gradient shaping” which a
 
 # Methodology
 _3.1 Basic Overview_
+
 The code proceeds to test the attack success rate over multiple trials (defined by num_trials). In each trial, a random house size and price are chosen as a malicious data point. The model is trained with the poisoned data and fine-tuned with additional noise. The predicted price for the malicious house size is then compared to the actual price, and if the difference exceeds a threshold (1 in this case), the attack is considered successful. The attack success rate is calculated as the percentage of successful attacks over the total number of trials.
 
 The input features in our program are hard-coded in the X and y arrays, which represent house sizes and corresponding house prices (the target variable), respectively. The model is initialized with variables learning_rate (set to 0.1) and epochs (set to 10,000), which serve as hyperparameters for controlling the optimization process. The controls for the bias and weight of the linear regression model are theta_0 and theta_1, respectively. Perturbations and noise are generated using noise_std and clip_threshold. The noise_std variable controls the standard deviation of the noise added to the model’s gradients during the poisoning attack while clip_threshold represents the threshold value used to clip the gradients during attack.
@@ -18,7 +19,8 @@ The very first function defined in the program is used to train the model. The t
 
 To test the model’s effectiveness, the perform_poisoning_attack() function is added to the program. It is used to perform a poisoning attack on the model by appending a malicious data point (house size, corresponding price) to the original data and then calling the training function to update the model with the poisoned data.
 
-_3.2 The Pseudocode _
+_3.2 The Pseudocode_
+
 Initialize input data (house sizes) and target data (house prices) as NumPy arrays.
 	X = [1, 2, 3, 4, 5]
 	y = [100, 150, 200, 250, 300]
