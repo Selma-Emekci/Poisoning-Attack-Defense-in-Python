@@ -1,6 +1,6 @@
 import random
 import csv
-import main as m
+import Poisoning_Attack_Defense_Code as m
 
 csv_file_name = 'poisoning_trials.csv'
 
